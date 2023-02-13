@@ -200,7 +200,7 @@ export default function Project() {
               </li>
               <li>
                 <Typography variant="body1">
-                  Managed deployment on Ubuntu Server and uses technologies such as Nginx, Gunicorn etc.
+                  Managed deployment on Ubuntu Server using technologies such as Nginx, Gunicorn etc.
                 </Typography>
               </li>
             </ul>
