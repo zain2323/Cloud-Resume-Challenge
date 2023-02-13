@@ -14,11 +14,19 @@ import "@fontsource/roboto/700.css";
 import Info from "../Info";
 import Header from "../Header";
 import SideBar from "../SiderBar";
+import Project from "../Projects";
 
 export default function Resume() {
   return (
     <>
-      <Container maxWidth="lg" sx={{ mt: 3 }}>
+      <Box
+        sx={{
+          marginLeft: 8,
+          marginRight: 8,
+          marginBottom: 2,
+          marginTop: 5,
+        }}
+      >
         <Header />
         <Divider sx={{ mt: 2 }} />
         <Info />
@@ -27,12 +35,19 @@ export default function Resume() {
           <Grid container spacing={2}>
             <Grid xs={4}>
               <SideBar />
-              <Divider sx={{ ml: 1, mr: 1 }} orientation="vertical" />
+              {/* <Divider sx={{ ml: 1, mr: 1 }} orientation="vertical" /> */}
             </Grid>
-            <Grid xs={8}>Profile Section</Grid>
+            <Grid xs={8}>
+              <Project />
+            </Grid>
           </Grid>
         </Box>
-      </Container>
+        <Center>
+          <Typography mt={2} variant="caption1" color="dark gray">
+            This website has been visited 500 times.
+          </Typography>
+        </Center>
+      </Box>
     </>
   );
 }

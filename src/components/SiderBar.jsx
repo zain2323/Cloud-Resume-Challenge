@@ -49,7 +49,7 @@ export default function SideBar() {
   return (
     <>
       <Stack sx={{ mt: 2, mb: 2 }} spacing={0.5}>
-        <Typography variant="h5">Education</Typography>
+        <Typography variant="h4">Education</Typography>
         <Typography variant="body1">
           BE in Computer Systems - 3.7 CPGPA
         </Typography>
@@ -65,7 +65,7 @@ export default function SideBar() {
       </Stack>
       <Divider />
       <Box sx={{ mt: 2, mr: 2, mb: 2 }}>
-        <Typography variant="h5">Technical Skills</Typography>
+        <Typography variant="h4">Technical Skills</Typography>
         <Grid
           container
           rowSpacing={1}
@@ -83,7 +83,7 @@ export default function SideBar() {
       </Box>
       <Divider />
       <Stack sx={{ mt: 2, mb: 2 }} spacing={0.5}>
-        <Typography variant="h5">Certifications</Typography>
+        <Typography variant="h4">Certifications</Typography>
         <Typography variant="body1">
           AWS Certified Cloud Practitioner
         </Typography>
@@ -109,12 +109,12 @@ export default function SideBar() {
         </Stack>
       </Stack>
       <Stack sx={{ mt: 2, mb: 2 }} spacing={0.5}>
-        <Typography variant="h5">Reach me </Typography>
+        <Typography variant="h4">Reach me </Typography>
         <Link color="inherit" underline="hover" variant="body1">
-          <Stack direction="row" spacing={0.7}>
+            <Stack direction="row" spacing={0.7}>
             <AlternateEmailIcon />
-            <Typography variant="body1">zainsiddiqui2323@gmail.com</Typography>
-          </Stack>
+          <Typography variant="body1">zainsiddiqui2323@gmail.com</Typography>
+            </Stack>
         </Link>
         <Stack direction="row" spacing={2}>
           <Link href="https://github.com/zain2323" color="inherit">
