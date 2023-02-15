@@ -86,7 +86,7 @@ export default function SideBar() {
       <Stack sx={{ mt: 2, mb: 2 }} spacing={0.5}>
         <Typography variant="h4">Certifications</Typography>
         <Typography variant="body1">
-          AWS Certified Cloud Practitioner
+          AWS Certified Cloud Practitioner (will do it)
         </Typography>
         <Stack direction="row" spacing={0.5}>
           <CalendarTodayIcon />
