@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Typography,
-  Stack,
-  Divider,
-  Grid,
-  Paper,
-  styled,
-  Box,
-  Link,
-} from "@mui/material";
+import { Typography, Stack, Paper, Box, Link } from "@mui/material";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 
 export default function Project() {
@@ -17,7 +8,6 @@ export default function Project() {
       sx={{
         "& > :not(style)": {
           m: 1,
-          width: "95%",
         },
       }}
     >
@@ -142,8 +132,7 @@ export default function Project() {
               </li>
               <li>
                 <Typography variant="body1">
-                  Uses encrypted HTTPS traffic using Amazon
-                  CloudFront.
+                  Uses encrypted HTTPS traffic using Amazon CloudFront.
                 </Typography>
               </li>
               <li>
@@ -200,7 +189,8 @@ export default function Project() {
               </li>
               <li>
                 <Typography variant="body1">
-                  Managed deployment on Ubuntu Server using technologies such as Nginx, Gunicorn etc.
+                  Managed deployment on Ubuntu Server using technologies such as
+                  Nginx, Gunicorn etc.
                 </Typography>
               </li>
             </ul>

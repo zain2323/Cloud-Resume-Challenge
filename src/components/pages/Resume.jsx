@@ -22,31 +22,26 @@ const url =
 export default function Resume() {
   const [pageCount, setPageCount] = React.useState(0);
 
-  React.useEffect(() => {
-    window.onload = function () {
-      fetch(url, {
-        method: "GET",
-        headers: { "Content-Type": "application/json" },
-      })
-        .then((res) => res.json())
-        .then((d) => setPageCount(d.count))
-        .catch((err) => console.log(err));  
-    };
-    return () => {
-      window.onload = null;
-    };
-   
-  }, []);
+  // React.useEffect(() => {
+  //   window.onload = function () {
+  //     fetch(url, {
+  //       method: "GET",
+  //       headers: { "Content-Type": "application/json" },
+  //     })
+  //       .then((res) => res.json())
+  //       .then((d) => setPageCount(d.count))
+  //       .catch((err) => console.log(err));
+  //   };
+  //   return () => {
+  //     window.onload = null;
+  //   };
+
+  // }, []);
 
   return (
     <>
       <Box
-        sx={{
-          marginLeft: 8,
-          marginRight: 8,
-          marginBottom: 2,
-          marginTop: 5,
-        }}
+        sx={{ marginLeft: "1%", marginRight: "1%", marginBottom: "1%", marginTop: "1%" }}
       >
         <Header />
         <Divider sx={{ mt: 2 }} />
@@ -62,13 +57,13 @@ export default function Resume() {
             </Grid>
           </Grid>
         </Box>
-        {
-          pageCount > 0 && <Center>
-          <Typography mt={2} variant="caption1" color="dark gray">
-            This website has been visited {pageCount} times.
-          </Typography>
-        </Center>
-        }
+        {pageCount > 0 && (
+          <Center>
+            <Typography mt={2} variant="caption1" color="dark gray">
+              This website has been visited {pageCount} times.
+            </Typography>
+          </Center>
+        )}
       </Box>
     </>
   );
