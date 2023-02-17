@@ -16,7 +16,28 @@ import Header from "../Header";
 import SideBar from "../SiderBar";
 import Project from "../Projects";
 
+const url =
+  "https://mnwp5e6x47.execute-api.us-east-1.amazonaws.com/beta/visitor-count";
+
 export default function Resume() {
+  const [pageCount, setPageCount] = React.useState(0);
+
+  React.useEffect(() => {
+    window.onload = function () {
+      fetch(url, {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+      })
+        .then((res) => res.json())
+        .then((d) => setPageCount(d.count))
+        .catch((err) => console.log(err));  
+    };
+    return () => {
+      window.onload = null;
+    };
+   
+  }, []);
+
   return (
     <>
       <Box
@@ -42,11 +63,13 @@ export default function Resume() {
             </Grid>
           </Grid>
         </Box>
-        <Center>
+        {
+          pageCount > 0 && <Center>
           <Typography mt={2} variant="caption1" color="dark gray">
-            This website has been visited 500 times.
+            This website has been visited {pageCount} times.
           </Typography>
         </Center>
+        }
       </Box>
     </>
   );

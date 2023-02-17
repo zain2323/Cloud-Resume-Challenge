@@ -142,13 +142,13 @@ export default function Project() {
               </li>
               <li>
                 <Typography variant="body1">
-                  Wesbite url uses encrypted HTTPS traffic using Amazon
+                  Uses encrypted HTTPS traffic using Amazon
                   CloudFront.
                 </Typography>
               </li>
               <li>
                 <Typography variant="body1">
-                  Uses custom domain from Amazon Route 53.
+                  Uses custom domain from Name.com
                 </Typography>
               </li>
               <li>
