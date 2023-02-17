@@ -54,11 +54,10 @@ export default function Resume() {
         <Divider sx={{ mt: 2 }} />
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
-            <Grid xs={4}>
+            <Grid xs={12} sm={12} md={4}>
               <SideBar />
-              {/* <Divider sx={{ ml: 1, mr: 1 }} orientation="vertical" /> */}
             </Grid>
-            <Grid xs={8}>
+            <Grid xs={12} sm={12} md={8}>
               <Project />
             </Grid>
           </Grid>
