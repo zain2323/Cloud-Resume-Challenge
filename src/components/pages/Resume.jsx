@@ -22,21 +22,21 @@ const url =
 export default function Resume() {
   const [pageCount, setPageCount] = React.useState(0);
 
-  React.useEffect(() => {
-    window.onload = function () {
-      fetch(url, {
-        method: "GET",
-        headers: { "Content-Type": "application/json" },
-      })
-        .then((res) => res.json())
-        .then((d) => setPageCount(d.count))
-        .catch((err) => console.log(err));
-    };
-    return () => {
-      window.onload = null;
-    };
+  // React.useEffect(() => {
+  //   window.onload = function () {
+  //     fetch(url, {
+  //       method: "GET",
+  //       headers: { "Content-Type": "application/json" },
+  //     })
+  //       .then((res) => res.json())
+  //       .then((d) => setPageCount(d.count))
+  //       .catch((err) => console.log(err));
+  //   };
+  //   return () => {
+  //     window.onload = null;
+  //   };
 
-  }, []);
+  // }, []);
 
   return (
     <>

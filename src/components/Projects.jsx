@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Stack, Paper, Box, Link } from "@mui/material";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+import "../index.css";
 
 export default function Project() {
   return (
@@ -11,7 +12,7 @@ export default function Project() {
         },
       }}
     >
-      <Paper elevation={10} sx={{ p: 4 }}>
+      <Paper elevation={10} sx={{ p: 1 }}>
         <Stack spacing={1} sx={{ m: 3, mt: 1 }}>
           <Typography variant="h4">Projects</Typography>
           <Stack spacing={1}>
@@ -23,7 +24,7 @@ export default function Project() {
             >
               Fast Bond
             </Link>
-            <ul>
+            <ul className="ul-inline">
               <li>
                 <Typography variant="body1">
                   A full stack web application I built using Flask for
@@ -59,7 +60,7 @@ export default function Project() {
             >
               Doctorly
             </Link>
-            <ul>
+            <ul className="ul-inline">
               <li>
                 <Typography variant="body1">
                   Developed the REST API for Doctorly, a mobile application that
@@ -93,7 +94,7 @@ export default function Project() {
             >
               Printier
             </Link>
-            <ul>
+            <ul className="ul-inline">
               <li>
                 <Typography variant="body1">
                   Developed a VSCode extension to simplify the process of
@@ -118,7 +119,7 @@ export default function Project() {
             >
               Cloud Resume
             </Link>
-            <ul>
+            <ul className="ul-inline">
               <li>
                 <Typography variant="body1">
                   I made his resume taking inspiration from Cloud Resume
@@ -174,17 +175,20 @@ export default function Project() {
                 September 2022 - Present
               </Typography>
             </Stack>
-            <ul>
+            <ul className="ul-inline">
               <li>
                 <Typography variant="body1">
-                  Refactored and optimized the React application having slow
-                  build times and added new features.
+                  Contributed to the development of a dashboard for a robotic
+                  healthcare application, built with React and also worked on
+                  the development of the corresponding back- end system.
                 </Typography>
               </li>
               <li>
                 <Typography variant="body1">
-                  Introduced new features on their existing backend system and
-                  improved the code quality.
+                  Contributed to the successful development and implementation
+                  of the system, that displays real-time patient data, including
+                  temperature, while the backend stored and processed the data
+                  for future use.
                 </Typography>
               </li>
               <li>
