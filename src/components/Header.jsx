@@ -69,7 +69,7 @@ export default function Header() {
             color: "gray",
           }}
         >
-          DevOps Engineer
+          Full Stack Developer
         </Typography>
       </Center>
     </>
